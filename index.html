@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNova - Phát triển & xuất bản ứng dụng di động toàn cầu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SuperNova</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./" data-i18n="nav.home"></a></li>
+                <li><a href="about.html" data-i18n="nav.about"></a></li>
+                <li><a href="products.html" data-i18n="nav.products"></a></li>
+                <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="vi">VI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <div class="slide-content">
+                    <h1 data-i18n="hero.title1"></h1>
+                    <p data-i18n="hero.subtitle1"></p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary" data-i18n="hero.exploreNow"></a>
+                        <a href="#products" class="btn btn-secondary" data-i18n="hero.downloadApps"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                <div class="slide-content">
+                    <h1 data-i18n="hero.title2"></h1>
+                    <p data-i18n="hero.subtitle2"></p>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn btn-primary" data-i18n="hero.learnMore"></a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.contact"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <div class="slide-content">
+                    <h1 data-i18n="hero.title3"></h1>
+                    <p data-i18n="hero.subtitle3">Đ</p>
+                    <div class="hero-buttons">
+                        <a href="#partners" class="btn btn-primary" data-i18n="hero.viewPartners"></a>
+                        <a href="#products" class="btn btn-secondary" data-i18n="hero.products"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about.title"></h2>
+                <p data-i18n="about.subtitle"></p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-title">
+                            <i class="fas fa-building"></i>
+                            <h3 data-i18n="about.companyInfo"></h3>
+                        </div>
+                        <p data-i18n="about.companyDesc"></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-title">
+                            <i class="fas fa-rocket"></i>
+                            <h3 data-i18n="about.missionVision"></h3>
+                        </div>
+                        <p><strong data-i18n="about.mission"></strong> <span data-i18n="about.missionDesc"></span></p>
+                        <p><strong data-i18n="about.vision"></strong> <span data-i18n="about.visionDesc"></span></p>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50M+</div>
+                        <div class="stat-label" data-i18n="stats.downloads"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label" data-i18n="stats.activeApps"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.5★</div>
+                        <div class="stat-label" data-i18n="stats.rating"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label" data-i18n="stats.countries"></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2><span data-i18n="products.title"></span> <span data-i18n="products.subtitle"></span></h2>
+                <p data-i18n="products.description"></p>
+            </div>
+            
+            <div class="products-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-icon">
+                                <img src="images/app/ClapiOS.webp" alt="Find Phone By Clap, Whistle">
+                            </div>
+                            <h3>Find Phone By Clap, Whistle</h3>
+                            <p>Anti-theft with motion alarm and quick phone finding by clapping.</p>
+                            <div class="store-links">
+                                <a href="https://apps.apple.com/us/app/find-phone-by-clap-whistle/id6502576283" class="app-store-btn">
+                                    <i class="fab fa-apple"></i> App Store
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=claptofindphone.findmyphone.supwhistle" class="play-store-btn">
+                                    <i class="fab fa-google-play"></i> Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-icon">
+                                <img src="images/app/PDFiOS.webp" alt="PDF Pro: AI Scan & Editor">
+                            </div>
+                            <h3>PDF Pro: AI Scan & Editor</h3>
+                            <p>Elevate your PDF editing with PDF Pro - AI Scan & Edit—easily edit text, images, and pages while annotating securely</p>
+                            <div class="store-links">
+                                <a href="https://apps.apple.com/vn/app/pdf-pro-ai-scan-editor/id6742165758" class="app-store-btn">
+                                    <i class="fab fa-apple"></i> App Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-icon">
+                                <img src="images/app/RecoverN01.webp" alt="Recovery Pro - File Recovery">
+                            </div>
+                            <h3>Recovery Pro - File Recovery</h3>
+                            <p>Lost your precious photos or videos? Accidentally deleted important files? Don't worry – Recovery Pro is here to rescue your valuable data quickly and efficiently.</p>
+                            <div class="store-links">
+                                <a href="https://play.google.com/store/apps/details?id=photorecovery.videorecovery.filerecovery.recoverdeletedphotosvideos.novarecoverypro" class="play-store-btn">
+                                    <i class="fab fa-google-play"></i> Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-icon">
+                                <img src="images/app/Authen.webp" alt="Authenticator">
+                            </div>
+                            <h3>AI Authenticator - 2FA & Pass</h3>
+                            <p data-i18n="app.authen.desc"></p>
+                            <div class="store-links">
+                                <a href="https://play.google.com/store/apps/details?id=authenticator.twofa.mfa.safepassword" class="play-store-btn">
+                                    <i class="fab fa-google-play"></i> Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-icon">
+                                <img src="images/app/QR.webp" alt="QR Code Scanner">
+                            </div>
+                            <h3>AI QR Code Scanner & Generator</h3>
+                            <p data-i18n="app.qrcode.desc"></p>
+                            <div class="store-links">
+                                <a href="https://play.google.com/store/apps/details?id=qrcodescanner.barcodescanner.makeqrcode" class="play-store-btn">
+                                    <i class="fab fa-google-play"></i> Google Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <div class="view-all-btn">
+                <a href="products.html" class="btn" data-i18n="products.viewAll"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="partners" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>OUR PARTNERS</span></h2>
+                <p data-i18n="partners.subtitle"></p>
+            </div>
+            
+            <div class="partners-container">
+                <div class="ad-networks">
+                    <div class="partners-logo">
+                        <div class="partner-logo">
+                            <img src="images/partners/google-ads-logo.svg" alt="Google Ads" loading="lazy" width="128" height="128">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/admob-logo.svg" alt="Google Admob" loading="lazy" width="128" height="128">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/meta-ads-logo.svg"alt="Meta Ads"  loading="lazy" width="128" height="128" alt="Meta Ads">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/adjust-logo.svg" alt="Adjust" loading="lazy" width="128" height="128" alt="Adjust">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/applovin-logo.svg" alt="Applovin" loading="lazy" width="128" height="128" alt="AppLovin">
+                        </div>
+                    </div>
+                    <div class="partners-logo">
+                        <div class="partner-logo">
+                            <img src="images/partners/pangle-logo.svg" alt="Pangle" loading="lazy" width="256" height="128" alt="Pangle">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/unity-logo.svg" alt="Unity" loading="lazy" width="256" height="128" alt="Unity">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/partners/mintegral-logo.svg" alt="Mintegral" loading="lazy" width="256" height="128" alt="Mintegral">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Super<span>Nova</span></a>
+                    <p data-i18n="footer.desc"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks"></h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home"></a></li>
+                        <li><a href="about.html" data-i18n="footer.aboutUs"></a></li>
+                        <li><a href="products.html" data-i18n="footer.products"></a></li>
+                        <li><a href="partners.html" data-i18n="footer.partners"></a></li>
+                        <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactInfo"></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="footer.address"></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+84912345678">+84 3 6660 6266</a></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:admin@supernovajsc.com">admin@supernovajsc.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperNova. <span data-i18n="footer.copyright"></span></p>
+                <div class="footer-policies">
+                    <a href="privacy.html" data-i18n="footer.privacy"></a>
+                    <a href="terms.html" data-i18n="footer.terms"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

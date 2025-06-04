@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển dụng - SuperNova</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SuperNova</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./" data-i18n="nav.home"></a></li>
+                <li><a href="about.html" data-i18n="nav.about"></a></li>
+                <li><a href="products.html" data-i18n="nav.products"></a></li>
+                <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="vi">VI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <h1 class="fade-in" data-i18n="careers.hero.title"></h1>
+            <p class="fade-in" data-i18n="careers.hero.subtitle"></p>
+        </div>
+    </section>
+
+    <section class="job-openings" id="openings">
+        <div class="container">
+            <h2 class="section-title" data-i18n="careers.openings.title"></h2>
+            
+            <div class="job-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="careers.filter.all"></button>
+                <button class="filter-btn" data-filter="engineering" data-i18n="careers.filter.engineering"></button>
+                <button class="filter-btn" data-filter="design" data-i18n="careers.filter.design"></button>
+                <button class="filter-btn" data-filter="marketing" data-i18n="careers.filter.marketing"></button>
+                <button class="filter-btn" data-filter="business" data-i18n="careers.filter.business"></button>
+            </div>
+
+            <div class="jobs-grid">
+                <div class="job-card" data-category="engineering">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.senior_android.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.senior_android.desc"></p>
+                    <div class="job-tags">
+                        <span>Kotlin</span>
+                        <span>Android SDK</span>
+                        <span>MVVM</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+
+                <div class="job-card" data-category="engineering">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.ios_dev.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience2"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.ios_dev.desc"></p>
+                    <div class="job-tags">
+                        <span>Swift</span>
+                        <span>UIKit</span>
+                        <span>SwiftUI</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+
+                <div class="job-card" data-category="design">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.ui_designer.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience2"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.ui_designer.desc"></p>
+                    <div class="job-tags">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Prototyping</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+
+                <div class="job-card" data-category="marketing">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.growth_manager.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.growth_manager.desc"></p>
+                    <div class="job-tags">
+                        <span>ASO</span>
+                        <span>Analytics</span>
+                        <span>User Acquisition</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+
+                <div class="job-card" data-category="engineering">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.backend_dev.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience2"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.backend_dev.desc"></p>
+                    <div class="job-tags">
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>AWS</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+
+                <div class="job-card" data-category="business">
+                    <div class="job-header">
+                        <h3 data-i18n="careers.jobs.bd_manager.title"></h3>
+                        <span class="job-type" data-i18n="careers.jobs.fulltime"></span>
+                    </div>
+                    <div class="job-meta">
+                        <span><i class="fas fa-briefcase"></i> <span data-i18n="careers.jobs.experience"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="careers.jobs.location.hanoi"></span></span>
+                    </div>
+                    <p class="job-desc" data-i18n="careers.jobs.bd_manager.desc"></p>
+                    <div class="job-tags">
+                        <span>Partnership</span>
+                        <span>Strategy</span>
+                        <span>English</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-i18n="careers.jobs.apply"></a>
+                </div>
+            </div>
+
+            <div class="no-jobs" style="display: none;">
+                <i class="fas fa-briefcase"></i>
+                <h3 data-i18n="careers.no_jobs.title"></h3>
+                <p data-i18n="careers.no_jobs.desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recruitment-process">
+        <div class="container">
+            <h2 class="section-title" data-i18n="careers.process.title"></h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4 data-i18n="careers.process.step1.title"></h4>
+                        <p data-i18n="careers.process.step1.desc"></p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4 data-i18n="careers.process.step2.title"></h4>
+                        <p data-i18n="careers.process.step2.desc"></p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4 data-i18n="careers.process.step3.title"></h4>
+                        <p data-i18n="careers.process.step3.desc"></p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4 data-i18n="careers.process.step4.title"></h4>
+                        <p data-i18n="careers.process.step4.desc"></p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4 data-i18n="careers.process.step5.title"></h4>
+                        <p data-i18n="careers.process.step5.desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-join">
+        <div class="container">
+            <h2 class="section-title" data-i18n="careers.why.title"></h2>
+            <div class="reasons-grid">
+                <div class="reason-card slide-in-left">
+                    <div class="reason-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 data-i18n="careers.why.growth.title"></h3>
+                    <p data-i18n="careers.why.growth.desc"></p>
+                </div>
+                <div class="reason-card zoom-in">
+                    <div class="reason-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="careers.why.team.title"></h3>
+                    <p data-i18n="careers.why.team.desc"></p>
+                </div>
+                <div class="reason-card slide-in-right">
+                    <div class="reason-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-i18n="careers.why.global.title"></h3>
+                    <p data-i18n="careers.why.global.desc"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title" data-i18n="careers.benefits.title"></h2>
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.salary.title"></h4>
+                                <p data-i18n="careers.benefits.salary.desc"></p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.insurance.title"></h4>
+                                <p data-i18n="careers.benefits.insurance.desc"></p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.training.title"></h4>
+                                <p data-i18n="careers.benefits.training.desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-text">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.balance.title"></h4>
+                                <p data-i18n="careers.benefits.balance.desc"></p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.vacation.title"></h4>
+                                <p data-i18n="careers.benefits.vacation.desc"></p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4 data-i18n="careers.benefits.equipment.title"></h4>
+                                <p data-i18n="careers.benefits.equipment.desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="careers-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="careers.cta.title"></h2>
+                <p data-i18n="careers.cta.subtitle"></p>
+                <a href="mailto:hr@supernovajsc.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    <span data-i18n="careers.cta.email"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Super<span>Nova</span></a>
+                    <p data-i18n="footer.desc"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks"></h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home"></a></li>
+                        <li><a href="about.html" data-i18n="footer.aboutUs"></a></li>
+                        <li><a href="products.html" data-i18n="footer.products"></a></li>
+                        <li><a href="partners.html" data-i18n="footer.partners"></a></li>
+                        <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactInfo"></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="footer.address"></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+84912345678">+84 3 6660 6266</a></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:admin@supernovajsc.com">admin@supernovajsc.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperNova. <span data-i18n="footer.copyright"></span></p>
+                <div class="footer-policies">
+                    <a href="privacy.html" data-i18n="footer.privacy"></a>
+                    <a href="terms.html" data-i18n="footer.terms"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/careers.js"></script>
+</body>
+</html>

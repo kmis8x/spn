@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - SuperNova</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SuperNova</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./" data-i18n="nav.home"></a></li>
+                <li><a href="about.html" data-i18n="nav.about"></a></li>
+                <li><a href="products.html" data-i18n="nav.products"></a></li>
+                <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="vi">VI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <h1 class="fade-in" data-i18n="contact.hero.title"></h1>
+            <p class="fade-in" data-i18n="contact.hero.subtitle"></p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item slide-in-left">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact.info.address.title"></h3>
+                    <p data-i18n="contact.info.address.line1"></p>
+                    <p data-i18n="contact.info.address.line2"></p>
+                </div>
+                <div class="info-item zoom-in">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact.info.phone.title"></h3>
+                    <p><a href="tel:+84366606266">+84 3 6660 6266</a></p>
+                    <p><a href="tel:+84973948669">+84 9 7394 8669</a></p>
+                </div>
+                <div class="info-item slide-in-right">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-i18n="contact.info.email.title"></h3>
+                    <p><a href="mailto:contact@supernovajsc.com">contact@supernovajsc.com</a></p>
+                    <p><a href="mailto:hr@supernovajsc.com">hr@supernovajsc.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-section fade-in">
+                    <h2 data-i18n="contact.form.title"></h2>
+                    <p data-i18n="contact.form.subtitle"></p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.form.name"></label>
+                                <input type="text" id="name" name="name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.form.email"></label>
+                                <input type="email" id="email" name="email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.form.phone"></label>
+                                <input type="tel" id="phone" name="phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact.form.subject"></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" data-i18n="contact.form.subjectSelect"></option>
+                                    <option value="general" data-i18n="contact.form.subjectGeneral"></option>
+                                    <option value="support" data-i18n="contact.form.subjectSupport"></option>
+                                    <option value="partnership" data-i18n="contact.form.subjectPartnership"></option>
+                                    <option value="career" data-i18n="contact.form.subjectCareer"></option>
+                                    <option value="other" data-i18n="contact.form.subjectOther"></option>
+                                </select>
+                                <i class="fas fa-tag"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message" data-i18n="contact.form.message"></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span data-i18n="contact.form.newsletter"></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-i18n="contact.form.submit"></span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar fade-in">
+                    <div class="office-hours">
+                        <h3 data-i18n="contact.hours.title"></h3>
+                        <ul>
+                            <li>
+                                <span data-i18n="contact.hours.weekdays"></span>
+                                <strong>9:00 - 17:00</strong>
+                            </li>
+                            <li>
+                                <span data-i18n="contact.hours.saturday"></span>
+                                <strong>9:00 - 16:00</strong>
+                            </li>
+                            <li>
+                                <span data-i18n="contact.hours.sunday"></span>
+                                <strong data-i18n="contact.hours.closed"></strong>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3 data-i18n="contact.social.title"></h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-btn linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-btn youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-contact">
+                        <h3 data-i18n="contact.quick.title"></h3>
+                        <p data-i18n="contact.quick.desc"></p>
+                        <a href="tel:+84912345678" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +84 912 345 678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.map.title"></h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.515937332378!2d105.77988227684048!3d21.012032388349898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acaacea71df5%3A0x2df3d05954603852!2zMjAgTmcuIDEyNiBQLiBN4buFIFRyw6wgSOG6oSwgTeG7hSBUcsOsLCBOYW0gVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1748881957085!5m2!1svi!2s" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-overlay">
+                    <div class="map-info">
+                        <h4>SuperNova JSC</h4>
+                        <p>Số 12 ngõ 126 Mễ Trì Hạ, Nam Từ Liêm, Hà Nội</p>
+                        <a href="https://maps.app.goo.gl/tdQuUqxPY2hcH6c96" target="_blank" class="btn btn-sm" data-i18n="contact.map.directions">
+                            <i class="fas fa-directions"></i> Chỉ đường
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.faq.title"></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 data-i18n="contact.faq.q1"></h4>
+                    <p data-i18n="contact.faq.a1"></p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="contact.faq.q2"></h4>
+                    <p data-i18n="contact.faq.a2"></p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="contact.faq.q3"></h4>
+                    <p data-i18n="contact.faq.a3"></p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="contact.faq.q4"></h4>
+                    <p data-i18n="contact.faq.a4"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Super<span>Nova</span></a>
+                    <p data-i18n="footer.desc"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks"></h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home"></a></li>
+                        <li><a href="about.html" data-i18n="footer.aboutUs"></a></li>
+                        <li><a href="products.html" data-i18n="footer.products"></a></li>
+                        <li><a href="partners.html" data-i18n="footer.partners"></a></li>
+                        <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactInfo"></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="footer.address"></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+84912345678">+84 3 6660 6266</a></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:admin@supernovajsc.com">admin@supernovajsc.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperNova. <span data-i18n="footer.copyright"></span></p>
+                <div class="footer-policies">
+                    <a href="privacy.html" data-i18n="footer.privacy"></a>
+                    <a href="terms.html" data-i18n="footer.terms"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

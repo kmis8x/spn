@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - SuperNova</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SuperNova</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./" data-i18n="nav.home"></a></li>
+                <li><a href="about.html" data-i18n="nav.about"></a></li>
+                <li><a href="products.html" data-i18n="nav.products"></a></li>
+                <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="vi">VI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <h1 data-i18n="products.hero.title"></h1>
+            <p data-i18n="products.hero.subtitle"></p>
+        </div>
+    </section>
+<!-- 
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm ứng dụng..." data-i18n="products.search.placeholder">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all" data-i18n="products.filter.all"></button>
+                <button class="filter-btn" data-filter="utility" data-i18n="products.filter.utility"></button>
+                <button class="filter-btn" data-filter="security" data-i18n="products.filter.security"></button>
+                <button class="filter-btn" data-filter="productivity" data-i18n="products.filter.productivity"></button>
+                <button class="filter-btn" data-filter="tools" data-i18n="products.filter.tools"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Find Phone By Clap -->
+                <div class="product-item" data-category="security">
+                    <div class="product-header">
+                        <div class="product-icon-large">
+                            <img src="images/app/ClapiOS.webp" alt="Find Phone By Clap">
+                        </div>
+                        <div class="product-meta">
+                            <span class="product-category">Bảo mật</span>
+                            <h3 class="product-title">Find Phone By Clap, Whistle</h3>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-description">Ứng dụng chống trộm với cảnh báo chuyển động và tìm điện thoại nhanh chóng bằng cách vỗ tay.</p>
+                        <div class="product-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>5M+ downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.5/5</span>
+                            </div>
+                        </div>
+                        <div class="product-links">
+                            <a href="https://apps.apple.com/us/app/find-phone-by-clap-whistle/id6502576283" class="store-btn app-store">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=claptofindphone.findmyphone.supwhistle" class="store-btn google-play">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Pro -->
+                <div class="product-item" data-category="productivity">
+                    <div class="product-header">
+                        <div class="product-icon-large">
+                            <img src="images/app/PDFiOS.webp" alt="PDF Pro">
+                        </div>
+                        <div class="product-meta">
+                            <span class="product-category">Năng suất</span>
+                            <h3 class="product-title">PDF Pro: AI Scan & Editor</h3>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-description">Nâng cao khả năng chỉnh sửa PDF với AI - dễ dàng chỉnh sửa văn bản, hình ảnh và trang trong khi chú thích một cách an toàn.</p>
+                        <div class="product-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>1M+ downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.7/5</span>
+                            </div>
+                        </div>
+                        <div class="product-links">
+                            <a href="https://apps.apple.com/vn/app/pdf-pro-ai-scan-editor/id6742165758" class="store-btn app-store">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recovery Pro -->
+                <div class="product-item" data-category="utility">
+                    <div class="product-header">
+                        <div class="product-icon-large">
+                            <img src="images/app/RecoverN01.webp" alt="Recovery Pro">
+                        </div>
+                        <div class="product-meta">
+                            <span class="product-category">Tiện ích</span>
+                            <h3 class="product-title">Recovery Pro - File Recovery</h3>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-description">Mất ảnh hoặc video quý giá? Vô tình xóa tệp quan trọng? Ứng dụng sẽ giúp bạn khôi phục dữ liệu nhanh và hiệu quả.</p>
+                        <div class="product-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>10M+ downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.6/5</span>
+                            </div>
+                        </div>
+                        <div class="product-links">
+                            <a href="https://play.google.com/store/apps/details?id=photorecovery.videorecovery.filerecovery.recoverdeletedphotosvideos.novarecoverypro" class="store-btn google-play">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authenticator -->
+                <div class="product-item" data-category="security">
+                    <div class="product-header">
+                        <div class="product-icon-large">
+                            <img src="images/app/Authen.webp" alt="Authenticator">
+                        </div>
+                        <div class="product-meta">
+                            <span class="product-category">Bảo mật</span>
+                            <h3 class="product-title">AI Authenticator - 2FA & Pass</h3>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-description">Xác thực 2FA và lưu mật khẩu an toàn với công nghệ AI hiện đại. Bảo vệ tài khoản của bạn khỏi các mối đe dọa trực tuyến.</p>
+                        <div class="product-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>3M+ downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5</span>
+                            </div>
+                        </div>
+                        <div class="product-links">
+                            <a href="https://play.google.com/store/apps/details?id=authenticator.twofa.mfa.safepassword" class="store-btn google-play">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Code Scanner -->
+                <div class="product-item" data-category="tools">
+                    <div class="product-header">
+                        <div class="product-icon-large">
+                            <img src="images/app/QR.webp" alt="QR Code Scanner">
+                        </div>
+                        <div class="product-meta">
+                            <span class="product-category">Công cụ</span>
+                            <h3 class="product-title">AI QR Code Scanner & Generator</h3>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-description">Quét và giải mã ngay lập tức mã QR, mã vạch, URL hoặc thông tin chi tiết về sản phẩm một cách dễ dàng với AI.</p>
+                        <div class="product-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>8M+ downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.5/5</span>
+                            </div>
+                        </div>
+                        <div class="product-links">
+                            <a href="https://play.google.com/store/apps/details?id=qrcodescanner.barcodescanner.makeqrcode" class="store-btn google-play">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more products here following the same pattern -->
+            </div>
+
+            <div class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3 data-i18n="products.noResults.title"></h3>
+                <p data-i18n="products.noResults.subtitle"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Super<span>Nova</span></a>
+                    <p data-i18n="footer.desc"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks"></h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home"></a></li>
+                        <li><a href="about.html" data-i18n="footer.aboutUs"></a></li>
+                        <li><a href="products.html" data-i18n="footer.products"></a></li>
+                        <li><a href="partners.html" data-i18n="footer.partners"></a></li>
+                        <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactInfo"></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="footer.address"></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+84912345678">+84 3 6660 6266</a></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:admin@supernovajsc.com">admin@supernovajsc.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperNova. <span data-i18n="footer.copyright"></span></p>
+                <div class="footer-policies">
+                    <a href="privacy.html" data-i18n="footer.privacy"></a>
+                    <a href="terms.html" data-i18n="footer.terms"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

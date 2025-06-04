@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SuperNova</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SuperNova</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./" data-i18n="nav.home"></a></li>
+                <li><a href="about.html" data-i18n="nav.about"></a></li>
+                <li><a href="products.html" data-i18n="nav.products"></a></li>
+                <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="vi">VI</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-pattern"></div>
+        <div class="container">
+            <h1 class="fade-in" data-i18n="blog.hero.title"></h1>
+            <p class="fade-in" data-i18n="blog.hero.subtitle"></p>
+        </div>
+    </section>
+
+    <section class="blog-main">
+        <div class="container">
+            <div class="blog-layout">
+                <div class="blog-content">
+                    <div class="featured-post fade-in">
+                        <div class="featured-image">
+                            <img src="images/blog/ai-mobile-apps.jpg" alt="AI in Mobile Apps">
+                            <span class="post-category" data-i18n="blog.category.technology"></span>
+                        </div>
+                        <div class="featured-content">
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> 28/05/2025</span>
+                                <span><i class="fas fa-user"></i> <span data-i18n="blog.author.tech"></span></span>
+                                <span><i class="fas fa-clock"></i> <span data-i18n="blog.readtime"></span></span>
+                            </div>
+                            <h2 data-i18n="blog.featured.title"></h2>
+                            <p data-i18n="blog.featured.excerpt"></p>
+                            <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="posts-grid">
+                        <article class="blog-card" data-category="product">
+                            <div class="blog-image">
+                                <img src="images/blog/app-launch.jpg" alt="App Launch">
+                                <span class="post-category" data-i18n="blog.category.product"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 25/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 3 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post1.title"></h3>
+                                <p data-i18n="blog.post1.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tutorial">
+                            <div class="blog-image">
+                                <img src="images/blog/mobile-security.jpg" alt="Mobile Security">
+                                <span class="post-category" data-i18n="blog.category.tutorial"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 22/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 7 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post2.title"></h3>
+                                <p data-i18n="blog.post2.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="company">
+                            <div class="blog-image">
+                                <img src="images/blog/team-building.jpg" alt="Team Building">
+                                <span class="post-category" data-i18n="blog.category.company"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 20/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 4 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post3.title"></h3>
+                                <p data-i18n="blog.post3.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="technology">
+                            <div class="blog-image">
+                                <img src="images/blog/flutter-development.jpg" alt="Flutter Development">
+                                <span class="post-category" data-i18n="blog.category.technology"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 18/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 6 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post4.title"></h3>
+                                <p data-i18n="blog.post4.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="insights">
+                            <div class="blog-image">
+                                <img src="images/blog/app-monetization.jpg" alt="App Monetization">
+                                <span class="post-category" data-i18n="blog.category.insights"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 15/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 8 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post5.title"></h3>
+                                <p data-i18n="blog.post5.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card" data-category="tutorial">
+                            <div class="blog-image">
+                                <img src="images/blog/aso-guide.jpg" alt="ASO Guide">
+                                <span class="post-category" data-i18n="blog.category.tutorial"></span>
+                            </div>
+                            <div class="blog-content">
+                                <div class="post-meta">
+                                    <span><i class="fas fa-calendar"></i> 12/05/2025</span>
+                                    <span><i class="fas fa-clock"></i> 10 phút</span>
+                                </div>
+                                <h3 data-i18n="blog.post6.title"></h3>
+                                <p data-i18n="blog.post6.excerpt"></p>
+                                <a href="#" class="read-more" data-i18n="blog.readmore"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="page-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span class="page-dots">...</span>
+                        <button class="page-btn">8</button>
+                        <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget search-widget">
+                        <h3 data-i18n="blog.sidebar.search"></h3>
+                        <div class="search-box">
+                            <input type="text" placeholder="Tìm kiếm bài viết..." data-i18n="blog.sidebar.searchPlaceholder">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget categories-widget">
+                        <h3 data-i18n="blog.sidebar.categories"></h3>
+                        <ul class="categories-list">
+                            <li>
+                                <a href="#" class="category-link active" data-filter="all">
+                                    <span data-i18n="blog.category.all"></span>
+                                    <span class="count">24</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-link" data-filter="technology">
+                                    <span data-i18n="blog.category.technology"></span>
+                                    <span class="count">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-link" data-filter="product">
+                                    <span data-i18n="blog.category.product"></span>
+                                    <span class="count">6</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-link" data-filter="tutorial">
+                                    <span data-i18n="blog.category.tutorial"></span>
+                                    <span class="count">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-link" data-filter="company">
+                                    <span data-i18n="blog.category.company"></span>
+                                    <span class="count">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category-link" data-filter="insights">
+                                    <span data-i18n="blog.category.insights"></span>
+                                    <span class="count">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget popular-widget">
+                        <h3 data-i18n="blog.sidebar.popular"></h3>
+                        <div class="popular-posts">
+                            <article class="popular-post">
+                                <div class="post-number">01</div>
+                                <div class="post-info">
+                                    <h4 data-i18n="blog.popular.post1"></h4>
+                                    <span class="post-date">22/05/2025</span>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <div class="post-number">02</div>
+                                <div class="post-info">
+                                    <h4 data-i18n="blog.popular.post2"></h4>
+                                    <span class="post-date">28/05/2025</span>
+                                </div>
+                            </article>
+                            <article class="popular-post">
+                                <div class="post-number">03</div>
+                                <div class="post-info">
+                                    <h4 data-i18n="blog.popular.post3"></h4>
+                                    <span class="post-date">15/05/2025</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget tags-widget">
+                        <h3 data-i18n="blog.sidebar.tags"></h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag">Mobile Apps</a>
+                            <a href="#" class="tag">AI</a>
+                            <a href="#" class="tag">Android</a>
+                            <a href="#" class="tag">iOS</a>
+                            <a href="#" class="tag">Security</a>
+                            <a href="#" class="tag">ASO</a>
+                            <a href="#" class="tag">Flutter</a>
+                            <a href="#" class="tag">UI/UX</a>
+                            <a href="#" class="tag">Marketing</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 data-i18n="blog.sidebar.newsletter"></h3>
+                        <p data-i18n="blog.sidebar.newsletterDesc"></p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Email của bạn" data-i18n="blog.sidebar.emailPlaceholder" required>
+                            <button type="submit" data-i18n="blog.sidebar.subscribe"></button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">Super<span>Nova</span></a>
+                    <p data-i18n="footer.desc"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks"></h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home"></a></li>
+                        <li><a href="about.html" data-i18n="footer.aboutUs"></a></li>
+                        <li><a href="products.html" data-i18n="footer.products"></a></li>
+                        <li><a href="partners.html" data-i18n="footer.partners"></a></li>
+                        <li><a href="careers.html" data-i18n="footer.careers"></a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog"></a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactInfo"></h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p data-i18n="footer.address"></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p><a href="tel:+84912345678">+84 3 6660 6266</a></p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:admin@supernovajsc.com">admin@supernovajsc.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperNova. <span data-i18n="footer.copyright"></span></p>
+                <div class="footer-policies">
+                    <a href="privacy.html" data-i18n="footer.privacy"></a>
+                    <a href="terms.html" data-i18n="footer.terms"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
